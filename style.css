@@ -232,20 +232,20 @@ footer{
     grid-template-columns: 5% 95%; 
 }
 .footer-location span{
-    padding-left: 10px;
+    padding-left: 0.7rem;
 }
 .footer-location img{
-    margin-top: 10px;
+    margin-top: 0.7rem;
     vertical-align: bottom;
 }
 .footer-contact{
     grid-area: contact;
 }
 .footer-contact p{
-    margin-bottom:26px;
+    margin-bottom:1.85rem;
 }
 .footer-contact img{
-    margin-right: 26px;
+    margin-right: 1.85rem;
     vertical-align: middle
 }
 .footer-links{
@@ -267,5 +267,116 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .social-icons i{
-    font-size:30px;
+    font-size:2.1rem;
+}
+/* mobile 375px */
+@media(max-width:376px){
+    html{
+        font-size: 10px;
+    }
+    h2{
+        font-size:28px;
+    }
+    /* nav mobile */
+    .nav{
+        padding: 1.7rem 2rem;
+        
+    }
+    .nav-items:not(:last-child){
+        padding-right:1.65rem;
+    }
+    .brand-logo img{
+        width:5.85rem;
+        height:1.7rem;
+    }
+    /* hero mobile section */
+    .hero img{
+        width: 382px;
+        height:225px;
+    }
+    .hero h2{
+        width:382px;
+        margin:23px;
+    }
+    .hero p {
+        width: 292px;
+        font-size: 12px;
+        padding: 0 23px;
+    }
+    
+    .cta {
+        width: 242px;
+        padding: 18px 0;
+    }
+    /* features mobile */
+    .features{
+        grid-template-columns: 1fr;
+        gap: 87px 0px;
+        padding:0px 38px;
+        margin: 100px 0px;
+    }
+    /* more description */
+    .extra-description {
+        flex-direction: column;
+        padding: 0 25px;
+    }
+    
+    .img-box img {
+        height: 215px;
+        margin: 0px 0px 52px 0px;
+    }
+    /* testimonials mobile */
+    .testimonials{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 150px 22px;
+    }
+  /* Testimonials */
+.testimonials {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 150px 22px;
+    }
+.testimonial:first-child::before {
+        left: 4px;
+    }
+    /* sign up */
+    .sign-up {
+        padding: 40px 25px;
+        bottom: -175px;
+    }
+form {
+        flex-direction: column;
+    }
+input[type="email"],
+        input[type="submit"] {
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+    }
+    /* footer */
+footer {
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-areas:
+        "logo"
+        "location"
+        "contact"
+        "links"
+        "more-links"
+        "social-icons";
+    }
+.social-icons i{
+        font-size: 28px;
+    }
+.fa-facebook{
+        justify-self: end;
+    }
+.fa-twitter{
+    justify-self: center;
+    }
+.fa-intagram{
+        justify-self: start;
+    }
 }
