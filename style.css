@@ -218,6 +218,54 @@ footer{
     grid-template-rows: auto;
     column-gap: 5rem;
     grid-template-areas:
-    "logo . . ."  
+    "logo . . . ." 
+    "location contact links more-links social-icons"
     ;
+}
+.footer-logo{
+    grid-area: logo;
+    margin-bottom: 2.5rem;
+}
+.footer-location{
+    grid-area: location;
+    display:grid;
+    grid-template-columns: 5% 95%; 
+}
+.footer-location span{
+    padding-left: 10px;
+}
+.footer-location img{
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+.footer-contact{
+    grid-area: contact;
+}
+.footer-contact p{
+    margin-bottom:26px;
+}
+.footer-contact img{
+    margin-right: 26px;
+    vertical-align: middle
+}
+.footer-links{
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-links a{
+    margin-bottom:24px;
+}
+.footer-more-links{
+    grid-area: more-links;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.social-icons{
+    grid-area: social-icons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social-icons i{
+    font-size:30px;
 }
